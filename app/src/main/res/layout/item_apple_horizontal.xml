@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_margin="@dimen/margin_max"
+    app:cardElevation="@dimen/elevation_middle"
+    app:cardCornerRadius="@dimen/radius_middle"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/appleIv"
+            android:layout_width="@dimen/apple_image_size"
+            android:layout_height="@dimen/apple_image_size"
+            android:layout_marginTop="@dimen/margin_mini"
+            android:src="@drawable/apple"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Яблоко"
+            android:layout_marginStart="@dimen/margin_mini"
+            android:layout_marginTop="@dimen/margin_mini"
+            android:textColor="@color/teal_700"
+            app:layout_constraintStart_toEndOf="@+id/appleIv"
+            app:layout_constraintTop_toTopOf="@+id/appleIv" />
+
+        <TextView
+            android:id="@+id/appleBarcodeTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_mini"
+            android:layout_marginEnd="@dimen/margin_middle"
+            android:layout_marginBottom="@dimen/margin_mini"
+            android:ellipsize="end"
+            android:lines="1"
+            android:layout_marginStart="@dimen/margin_mini"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/gfgfgf"
+            app:layout_constraintTop_toBottomOf="@+id/appleIv"
+            tools:text="5555555555" />
+
+        <TextView
+            android:id="@+id/gfgfgf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_middle"
+            android:layout_marginTop="@dimen/margin_mini"
+            android:layout_marginEnd="@dimen/margin_middle"
+            android:layout_marginBottom="@dimen/margin_mini"
+            android:ellipsize="end"
+            android:lines="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/appleIv"
+            app:layout_constraintTop_toBottomOf="@+id/appleIv"
+            android:text="штрих-код:" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/appleEatBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_700"
+            android:text="@string/button_eat_apple"
+            app:cornerRadius="@dimen/radius_middle"
+            android:layout_marginEnd="@dimen/margin_middle"
+            app:layout_constraintBottom_toBottomOf="@+id/appleIv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/appleIv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Adapters5</string>
+    <string name="button_eat_apple">Съесть</string>
+    <string name="barcode">штрих-код:</string>
+</resources>
